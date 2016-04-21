@@ -1,4 +1,4 @@
-# ubuntu-base
+# alpine-ruby
 #
 # VERSION               0.0.1
 
