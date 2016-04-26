@@ -6,10 +6,10 @@ FROM      gendosu/alpine-base:latest
 
 MAINTAINER Gen Takahashi <gendosu@gmail.com>
 
-ENV RBENV_ROOT /usr/local/rbenv \
-&&  PATH ${RBENV_ROOT}/shims:${RBENV_ROOT}/bin:$PATH \
-&&  RUBY_VERSION 2.3.0 \
-&&  CONFIGURE_OPTS --disable-install-doc
+ENV PATH /usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH
+ENV RBENV_ROOT /usr/local/rbenv
+ENV RUBY_VERSION 2.3.0
+ENV CONFIGURE_OPTS --disable-install-doc
 
 RUN apk add --update \
     linux-headers \
