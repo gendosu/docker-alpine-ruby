@@ -1,0 +1,15 @@
+branches:
+  only:
+    - master
+
+language: bash
+
+services:
+  - docker
+
+before_script:
+  - repo=gendosu/alpine-ruby
+
+script:
+  - docker build -t $repo .
+
