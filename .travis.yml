@@ -8,4 +8,4 @@ before_script:
 
 script:
   - docker build -t $repo .
-
+  - docker run --rm $repo if [ `ruby -v | cut -d " " -f 2` != "2.3.0p0" ]; then exit -1; fi
