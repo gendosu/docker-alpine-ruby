@@ -8,7 +8,7 @@ MAINTAINER Gen Takahashi <gendosu@gmail.com>
 
 ENV PATH /usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH
 ENV RBENV_ROOT /usr/local/rbenv
-ENV RUBY_VERSION 2.3.1
+ENV RUBY_VERSION 2.1.2
 ENV CONFIGURE_OPTS --disable-install-doc
 
 RUN apk add --update --no-cache --virtual .ruby-builddeps \
