@@ -18,29 +18,29 @@ RUN apk add --update --no-cache --virtual .ruby-builddeps \
     xvfb \
     mariadb-dev \
     mysql-client \
-		autoconf \
-		bison \
-		bzip2 \
-		bzip2-dev \
-		ca-certificates \
-		coreutils \
-		gcc \
-		gdbm-dev \
-		glib-dev \
-		libc-dev \
-		libffi-dev \
-		libxml2-dev \
-		libxslt-dev \
-		make \
-		ncurses-dev \
-		openssl \
-		openssl-dev \
-		procps \
-		readline-dev \
-		ruby \
-		tar \
-		yaml-dev \
-		zlib-dev \
+    autoconf \
+    bison \
+    bzip2 \
+    bzip2-dev \
+    ca-certificates \
+    coreutils \
+    gcc \
+    gdbm-dev \
+    glib-dev \
+    libc-dev \
+    libffi-dev \
+    libxml2-dev \
+    libxslt-dev \
+    make \
+    ncurses-dev \
+    openssl \
+    openssl-dev \
+    procps \
+    readline-dev \
+    ruby \
+    tar \
+    yaml-dev \
+    zlib-dev \
 &&  rm -rf /var/cache/apk/*
 
 RUN git clone --depth 1 git://github.com/sstephenson/rbenv.git ${RBENV_ROOT} \
